@@ -1,0 +1,17 @@
+name: Hello
+
+on:
+  push
+  # push:
+  # branches-ignore:
+  # - "**"
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Hello World
+        run: echo "Hello World"
